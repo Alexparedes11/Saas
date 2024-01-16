@@ -1,0 +1,62 @@
+.success{
+    background-color: $success;
+    font-size: $font-size;
+}
+.warning{
+    background-color: $warning;
+    font-size: $font-size;
+}
+.error{
+    background-color: $error;
+    font-size: $font-size-large;
+}
+.info{
+    background-color: $info;
+    font-size: $font-size-small;
+}
+.box{
+    margin: $margin;
+    padding: $padding;
+    @include border($secondary);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: $secondary;
+}
+
+.card{
+    margin: $margin;
+    padding: $padding;
+    @include border($secondary);
+
+    .card-title{
+        margin-bottom: $margin;
+        font-weight: bold;
+    }
+
+    .card-body{
+        padding: 1rem;
+        a{
+            text-decoration: none;
+            color: $secondary;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.btn{
+    @include boton($primary);
+
+}
+@each $color, $value in $colores {
+    .btn-#{$color} {
+        @include boton($value);
+    }
+    .btn-#{$color}-outlined {
+        @include boton($value);
+        @include border($secondary);
+    }
+}
+

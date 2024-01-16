@@ -1,0 +1,23 @@
+@use 'sass:color';
+
+$primary: #ffffff;
+$secondary: #000000;
+$success: #28a745;
+$warning: #ffc107;
+$error: #dc3545;
+$info: #17a2b8;
+
+$colores:("primary":$primary, "secondary":$secondary, "success":$success, "warning":$warning, "error":$error, "info":$info);
+
+
+
+$margin: 1rem;
+$padding: 1rem;
+
+$border-thickness: 0.1rem;
+$border-radius: 0.5rem;
+
+
+$font-size: 1rem;
+$font-size-small: $font-size * 0.8;
+$font-size-large: $font-size * 1.2;

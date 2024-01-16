@@ -1,0 +1,27 @@
+@use 'sass:color';
+
+@mixin border($color: $primary){
+    border: {
+        color: $color;
+        style: solid;
+        thickness: $border-thickness;
+        radius: $border-radius;
+    }
+}
+
+@mixin boton($color){
+    color: color-texto($color);
+    padding: $padding;
+    margin: $margin;
+    font-weight: bold;
+    width: 10rem;
+    text-align: center;
+    background-color: $color;
+    border-radius: $border-radius;
+    text-decoration: none;
+
+    &:hover{
+        background-color: color.scale($color, $lightness: 10%);
+        color: color-texto($color);
+    }
+}

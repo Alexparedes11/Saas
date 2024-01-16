@@ -1,0 +1,1174 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.text-primary {
+  color: #ffffff;
+}
+
+.bg-primary {
+  background-color: #ffffff;
+}
+
+.text-primary-dark-1 {
+  color: #e6e6e6;
+}
+
+.bg-primary-dark-1 {
+  background-color: #e6e6e6;
+}
+
+.text-primary-light-1 {
+  color: white;
+}
+
+.bg-primary-light-1 {
+  background-color: white;
+}
+
+.text-primary-dark-2 {
+  color: #cccccc;
+}
+
+.bg-primary-dark-2 {
+  background-color: #cccccc;
+}
+
+.text-primary-light-2 {
+  color: white;
+}
+
+.bg-primary-light-2 {
+  background-color: white;
+}
+
+.text-primary-dark-3 {
+  color: #b3b3b3;
+}
+
+.bg-primary-dark-3 {
+  background-color: #b3b3b3;
+}
+
+.text-primary-light-3 {
+  color: white;
+}
+
+.bg-primary-light-3 {
+  background-color: white;
+}
+
+.text-primary-dark-4 {
+  color: #999999;
+}
+
+.bg-primary-dark-4 {
+  background-color: #999999;
+}
+
+.text-primary-light-4 {
+  color: white;
+}
+
+.bg-primary-light-4 {
+  background-color: white;
+}
+
+.text-primary-dark-5 {
+  color: gray;
+}
+
+.bg-primary-dark-5 {
+  background-color: gray;
+}
+
+.text-primary-light-5 {
+  color: white;
+}
+
+.bg-primary-light-5 {
+  background-color: white;
+}
+
+.text-primary-dark-6 {
+  color: #666666;
+}
+
+.bg-primary-dark-6 {
+  background-color: #666666;
+}
+
+.text-primary-light-6 {
+  color: white;
+}
+
+.bg-primary-light-6 {
+  background-color: white;
+}
+
+.text-primary-dark-7 {
+  color: #4d4d4d;
+}
+
+.bg-primary-dark-7 {
+  background-color: #4d4d4d;
+}
+
+.text-primary-light-7 {
+  color: white;
+}
+
+.bg-primary-light-7 {
+  background-color: white;
+}
+
+.text-primary-dark-8 {
+  color: #333333;
+}
+
+.bg-primary-dark-8 {
+  background-color: #333333;
+}
+
+.text-primary-light-8 {
+  color: white;
+}
+
+.bg-primary-light-8 {
+  background-color: white;
+}
+
+.text-secondary {
+  color: #000000;
+}
+
+.bg-secondary {
+  background-color: #000000;
+}
+
+.text-secondary-dark-1 {
+  color: black;
+}
+
+.bg-secondary-dark-1 {
+  background-color: black;
+}
+
+.text-secondary-light-1 {
+  color: #1a1a1a;
+}
+
+.bg-secondary-light-1 {
+  background-color: #1a1a1a;
+}
+
+.text-secondary-dark-2 {
+  color: black;
+}
+
+.bg-secondary-dark-2 {
+  background-color: black;
+}
+
+.text-secondary-light-2 {
+  color: #333333;
+}
+
+.bg-secondary-light-2 {
+  background-color: #333333;
+}
+
+.text-secondary-dark-3 {
+  color: black;
+}
+
+.bg-secondary-dark-3 {
+  background-color: black;
+}
+
+.text-secondary-light-3 {
+  color: #4d4d4d;
+}
+
+.bg-secondary-light-3 {
+  background-color: #4d4d4d;
+}
+
+.text-secondary-dark-4 {
+  color: black;
+}
+
+.bg-secondary-dark-4 {
+  background-color: black;
+}
+
+.text-secondary-light-4 {
+  color: #666666;
+}
+
+.bg-secondary-light-4 {
+  background-color: #666666;
+}
+
+.text-secondary-dark-5 {
+  color: black;
+}
+
+.bg-secondary-dark-5 {
+  background-color: black;
+}
+
+.text-secondary-light-5 {
+  color: gray;
+}
+
+.bg-secondary-light-5 {
+  background-color: gray;
+}
+
+.text-secondary-dark-6 {
+  color: black;
+}
+
+.bg-secondary-dark-6 {
+  background-color: black;
+}
+
+.text-secondary-light-6 {
+  color: #999999;
+}
+
+.bg-secondary-light-6 {
+  background-color: #999999;
+}
+
+.text-secondary-dark-7 {
+  color: black;
+}
+
+.bg-secondary-dark-7 {
+  background-color: black;
+}
+
+.text-secondary-light-7 {
+  color: #b3b3b3;
+}
+
+.bg-secondary-light-7 {
+  background-color: #b3b3b3;
+}
+
+.text-secondary-dark-8 {
+  color: black;
+}
+
+.bg-secondary-dark-8 {
+  background-color: black;
+}
+
+.text-secondary-light-8 {
+  color: #cccccc;
+}
+
+.bg-secondary-light-8 {
+  background-color: #cccccc;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.bg-success {
+  background-color: #28a745;
+}
+
+.text-success-dark-1 {
+  color: #24963e;
+}
+
+.bg-success-dark-1 {
+  background-color: #24963e;
+}
+
+.text-success-light-1 {
+  color: #2ebf4f;
+}
+
+.bg-success-light-1 {
+  background-color: #2ebf4f;
+}
+
+.text-success-dark-2 {
+  color: #208637;
+}
+
+.bg-success-dark-2 {
+  background-color: #208637;
+}
+
+.text-success-light-2 {
+  color: #3bd05d;
+}
+
+.bg-success-light-2 {
+  background-color: #3bd05d;
+}
+
+.text-success-dark-3 {
+  color: #1c7530;
+}
+
+.bg-success-dark-3 {
+  background-color: #1c7530;
+}
+
+.text-success-light-3 {
+  color: #54d672;
+}
+
+.bg-success-light-3 {
+  background-color: #54d672;
+}
+
+.text-success-dark-4 {
+  color: #186429;
+}
+
+.bg-success-dark-4 {
+  background-color: #186429;
+}
+
+.text-success-light-4 {
+  color: #6cdc86;
+}
+
+.bg-success-light-4 {
+  background-color: #6cdc86;
+}
+
+.text-success-dark-5 {
+  color: #145423;
+}
+
+.bg-success-dark-5 {
+  background-color: #145423;
+}
+
+.text-success-light-5 {
+  color: #85e29a;
+}
+
+.bg-success-light-5 {
+  background-color: #85e29a;
+}
+
+.text-success-dark-6 {
+  color: #10431c;
+}
+
+.bg-success-dark-6 {
+  background-color: #10431c;
+}
+
+.text-success-light-6 {
+  color: #9de8ae;
+}
+
+.bg-success-light-6 {
+  background-color: #9de8ae;
+}
+
+.text-success-dark-7 {
+  color: #0c3215;
+}
+
+.bg-success-dark-7 {
+  background-color: #0c3215;
+}
+
+.text-success-light-7 {
+  color: #b6edc2;
+}
+
+.bg-success-light-7 {
+  background-color: #b6edc2;
+}
+
+.text-success-dark-8 {
+  color: #08210e;
+}
+
+.bg-success-dark-8 {
+  background-color: #08210e;
+}
+
+.text-success-light-8 {
+  color: #cef3d7;
+}
+
+.bg-success-light-8 {
+  background-color: #cef3d7;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.text-warning-dark-1 {
+  color: #ecb100;
+}
+
+.bg-warning-dark-1 {
+  background-color: #ecb100;
+}
+
+.text-warning-light-1 {
+  color: #ffc720;
+}
+
+.bg-warning-light-1 {
+  background-color: #ffc720;
+}
+
+.text-warning-dark-2 {
+  color: #d29d00;
+}
+
+.bg-warning-dark-2 {
+  background-color: #d29d00;
+}
+
+.text-warning-light-2 {
+  color: #ffcd39;
+}
+
+.bg-warning-light-2 {
+  background-color: #ffcd39;
+}
+
+.text-warning-dark-3 {
+  color: #b78a00;
+}
+
+.bg-warning-dark-3 {
+  background-color: #b78a00;
+}
+
+.text-warning-light-3 {
+  color: #ffd451;
+}
+
+.bg-warning-light-3 {
+  background-color: #ffd451;
+}
+
+.text-warning-dark-4 {
+  color: #9d7600;
+}
+
+.bg-warning-dark-4 {
+  background-color: #9d7600;
+}
+
+.text-warning-light-4 {
+  color: #ffda6a;
+}
+
+.bg-warning-light-4 {
+  background-color: #ffda6a;
+}
+
+.text-warning-dark-5 {
+  color: #836200;
+}
+
+.bg-warning-dark-5 {
+  background-color: #836200;
+}
+
+.text-warning-light-5 {
+  color: #ffe083;
+}
+
+.bg-warning-light-5 {
+  background-color: #ffe083;
+}
+
+.text-warning-dark-6 {
+  color: #694f00;
+}
+
+.bg-warning-dark-6 {
+  background-color: #694f00;
+}
+
+.text-warning-light-6 {
+  color: #ffe69c;
+}
+
+.bg-warning-light-6 {
+  background-color: #ffe69c;
+}
+
+.text-warning-dark-7 {
+  color: #4f3b00;
+}
+
+.bg-warning-dark-7 {
+  background-color: #4f3b00;
+}
+
+.text-warning-light-7 {
+  color: #ffecb5;
+}
+
+.bg-warning-light-7 {
+  background-color: #ffecb5;
+}
+
+.text-warning-dark-8 {
+  color: #342700;
+}
+
+.bg-warning-dark-8 {
+  background-color: #342700;
+}
+
+.text-warning-light-8 {
+  color: #fff3cd;
+}
+
+.bg-warning-light-8 {
+  background-color: #fff3cd;
+}
+
+.text-error {
+  color: #dc3545;
+}
+
+.bg-error {
+  background-color: #dc3545;
+}
+
+.text-error-dark-1 {
+  color: #d12435;
+}
+
+.bg-error-dark-1 {
+  background-color: #d12435;
+}
+
+.text-error-light-1 {
+  color: #e04958;
+}
+
+.bg-error-light-1 {
+  background-color: #e04958;
+}
+
+.text-error-dark-2 {
+  color: #ba202f;
+}
+
+.bg-error-dark-2 {
+  background-color: #ba202f;
+}
+
+.text-error-light-2 {
+  color: #e35d6a;
+}
+
+.bg-error-light-2 {
+  background-color: #e35d6a;
+}
+
+.text-error-dark-3 {
+  color: #a31c29;
+}
+
+.bg-error-dark-3 {
+  background-color: #a31c29;
+}
+
+.text-error-light-3 {
+  color: #e7727d;
+}
+
+.bg-error-light-3 {
+  background-color: #e7727d;
+}
+
+.text-error-dark-4 {
+  color: #8c1823;
+}
+
+.bg-error-dark-4 {
+  background-color: #8c1823;
+}
+
+.text-error-light-4 {
+  color: #ea868f;
+}
+
+.bg-error-light-4 {
+  background-color: #ea868f;
+}
+
+.text-error-dark-5 {
+  color: #74141d;
+}
+
+.bg-error-dark-5 {
+  background-color: #74141d;
+}
+
+.text-error-light-5 {
+  color: #ee9aa2;
+}
+
+.bg-error-light-5 {
+  background-color: #ee9aa2;
+}
+
+.text-error-dark-6 {
+  color: #5d1017;
+}
+
+.bg-error-dark-6 {
+  background-color: #5d1017;
+}
+
+.text-error-light-6 {
+  color: #f1aeb5;
+}
+
+.bg-error-light-6 {
+  background-color: #f1aeb5;
+}
+
+.text-error-dark-7 {
+  color: #460c12;
+}
+
+.bg-error-dark-7 {
+  background-color: #460c12;
+}
+
+.text-error-light-7 {
+  color: #f5c2c7;
+}
+
+.bg-error-light-7 {
+  background-color: #f5c2c7;
+}
+
+.text-error-dark-8 {
+  color: #2f080c;
+}
+
+.bg-error-dark-8 {
+  background-color: #2f080c;
+}
+
+.text-error-light-8 {
+  color: #f8d7da;
+}
+
+.bg-error-light-8 {
+  background-color: #f8d7da;
+}
+
+.text-info {
+  color: #17a2b8;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+}
+
+.text-info-dark-1 {
+  color: #1592a6;
+}
+
+.bg-info-dark-1 {
+  background-color: #1592a6;
+}
+
+.text-info-light-1 {
+  color: #1abad3;
+}
+
+.bg-info-light-1 {
+  background-color: #1abad3;
+}
+
+.text-info-dark-2 {
+  color: #128293;
+}
+
+.bg-info-dark-2 {
+  background-color: #128293;
+}
+
+.text-info-light-2 {
+  color: #28cae4;
+}
+
+.bg-info-light-2 {
+  background-color: #28cae4;
+}
+
+.text-info-dark-3 {
+  color: #107181;
+}
+
+.bg-info-dark-3 {
+  background-color: #107181;
+}
+
+.text-info-light-3 {
+  color: #42d1e7;
+}
+
+.bg-info-light-3 {
+  background-color: #42d1e7;
+}
+
+.text-info-dark-4 {
+  color: #0e616e;
+}
+
+.bg-info-dark-4 {
+  background-color: #0e616e;
+}
+
+.text-info-light-4 {
+  color: #5dd7eb;
+}
+
+.bg-info-light-4 {
+  background-color: #5dd7eb;
+}
+
+.text-info-dark-5 {
+  color: #0c515c;
+}
+
+.bg-info-dark-5 {
+  background-color: #0c515c;
+}
+
+.text-info-light-5 {
+  color: #78deee;
+}
+
+.bg-info-light-5 {
+  background-color: #78deee;
+}
+
+.text-info-dark-6 {
+  color: #09414a;
+}
+
+.bg-info-dark-6 {
+  background-color: #09414a;
+}
+
+.text-info-light-6 {
+  color: #93e5f2;
+}
+
+.bg-info-light-6 {
+  background-color: #93e5f2;
+}
+
+.text-info-dark-7 {
+  color: #073137;
+}
+
+.bg-info-dark-7 {
+  background-color: #073137;
+}
+
+.text-info-light-7 {
+  color: #aeebf5;
+}
+
+.bg-info-light-7 {
+  background-color: #aeebf5;
+}
+
+.text-info-dark-8 {
+  color: #052025;
+}
+
+.bg-info-dark-8 {
+  background-color: #052025;
+}
+
+.text-info-light-8 {
+  color: #c9f2f8;
+}
+
+.bg-info-light-8 {
+  background-color: #c9f2f8;
+}
+
+.success {
+  background-color: #28a745;
+  font-size: 1rem;
+}
+
+.warning {
+  background-color: #ffc107;
+  font-size: 1rem;
+}
+
+.error {
+  background-color: #dc3545;
+  font-size: 1.2rem;
+}
+
+.info {
+  background-color: #17a2b8;
+  font-size: 0.8rem;
+}
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.card .card-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-body a {
+  text-decoration: none;
+  color: #000000;
+}
+.card .card-body a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.btn-primary {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.btn-primary-outlined {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-primary-outlined:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.btn-secondary {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.btn-secondary-outlined {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-secondary-outlined:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.btn-success {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #28a745;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn-success:hover {
+  background-color: #2ebf4f;
+  color: #ffffff;
+}
+
+.btn-success-outlined {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #28a745;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-success-outlined:hover {
+  background-color: #2ebf4f;
+  color: #ffffff;
+}
+
+.btn-warning {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #ffc107;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn-warning:hover {
+  background-color: #ffc720;
+  color: #000000;
+}
+
+.btn-warning-outlined {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #ffc107;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-warning-outlined:hover {
+  background-color: #ffc720;
+  color: #000000;
+}
+
+.btn-error {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #dc3545;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn-error:hover {
+  background-color: #e04958;
+  color: #000000;
+}
+
+.btn-error-outlined {
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #dc3545;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-error-outlined:hover {
+  background-color: #e04958;
+  color: #000000;
+}
+
+.btn-info {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #17a2b8;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.btn-info:hover {
+  background-color: #1abad3;
+  color: #ffffff;
+}
+
+.btn-info-outlined {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background-color: #17a2b8;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  border-color: #000000;
+  border-style: solid;
+  border-thickness: 0.1rem;
+  border-radius: 0.5rem;
+}
+.btn-info-outlined:hover {
+  background-color: #1abad3;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */
